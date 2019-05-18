@@ -6,15 +6,17 @@ import java.util.concurrent.FutureTask;
 
 public class FutureTaskThread {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-
-        FutureTaskThread thread = new FutureTaskThread();
+        /**
+         * futureTask包含callable接口对象,以及实现了runnable接口
+         * 重写的run方法里面调用了callable对象的call方法
+         * */
         FutureTask<Integer> task = new FutureTask<>(new Callable<Integer>() {
             int i = 0;
 
             @Override
             public Integer call() {
                 for (; i < 1000; i++) {
-                    System.out.println(Thread.currentThread().getName()+"--" + i);
+                    System.out.println(Thread.currentThread().getName() + "--" + i);
                 }
                 return i;
             }
