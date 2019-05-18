@@ -1,4 +1,4 @@
-package main.java.thread;
+package crazyThread;
 
 public class YieldThread extends Thread {
     private boolean l;

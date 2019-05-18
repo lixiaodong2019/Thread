@@ -1,4 +1,4 @@
-package main.java.thread;
+package crazyThread;
 
 public class JoinThread extends Thread{
 

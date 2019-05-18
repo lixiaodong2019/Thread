@@ -1,4 +1,4 @@
-package main.java.thread;
+package crazyThread;
 /**
  * 在主线程执行完毕后守护线程自动结束
  * */
